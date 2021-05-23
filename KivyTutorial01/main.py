@@ -1,9 +1,11 @@
-import kivy
-from kivy.app import App
-from kivy.uix.label import Label
-from kivy.uix.gridlayout import GridLayout
-from kivy.uix.textinput import TextInput
 from kivy.uix.button import Button
+from kivy.uix.textinput import TextInput
+from kivy.uix.gridlayout import GridLayout
+from kivy.uix.label import Label
+from kivy.app import App
+import kivy
+import os
+os.system('cls')
 
 
 class MyGrid(GridLayout):
@@ -36,7 +38,7 @@ class MyGrid(GridLayout):
         firstName = self.firstName.text
         lastName = self.lastName.text
         email = self.email.text
-        print(firstName, lastName, email)
+        print(f'Fitst: {firstName} Last: {lastName} Email: {email}')
         self.firstName.text = ''
         self.lastName.text = ''
         self.email.text = ''
